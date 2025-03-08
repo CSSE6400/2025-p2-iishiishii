@@ -36,7 +36,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Correct Health Endpoint
-        setup-command: pip3 install poetry
+        setup-command: pip3 install poetry flask_sqlalchemy
         command: "./.csse6400/bin/health.sh"
         timeout: 8
         max-score: 25
@@ -45,7 +45,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Correct Unit Tests
-        setup-command: pip3 install poetry
+        setup-command: pip3 install poetry flask_sqlalchemy
         command: "./.csse6400/bin/unittest.sh"
         timeout: 10
         max-score: 25
